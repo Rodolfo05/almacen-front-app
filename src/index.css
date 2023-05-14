@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.moduloCaja{
+  background-color: rgb(234, 234, 234);
+  border: solid rgb(143, 190, 48);
+  margin-top: 20px;
+  height: 221px;
+  display: block;
+}
+
+.moduloCaja:hover{
+  background-color: rgb(213, 213, 213);
+  border: solid rgb(109, 145, 38);
+  cursor: pointer;
+}
+
+.cardVentaCabecera{
+  color: white;
+  font-weight: bold;
+  background-color: rgb(94, 119, 45);;
+}
+
+.imgModuloCaja{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: -22px;
+}
+
+.css-1nmdiq5-menu{
+  font-weight: bold;
+}
+
+.buttonBlocked{
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
