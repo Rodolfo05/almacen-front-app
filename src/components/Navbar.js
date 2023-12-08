@@ -3,10 +3,12 @@ import { BrowserRouter as Router, Switch, Route, Routes, NavLink } from "react-r
 import { InicioApp } from './InicioApp';
 import { ListadoProductos } from './productos/ListadoProductos';
 import { NuevaVenta } from './ventas/NuevaVenta';
+import { HistorialVentas } from './ventas/historial_ventas/HistorialVentas';
+import { DetalleVenta } from './ventas/historial_ventas/DetalleVenta';
 
 export const Navbar = () => {
     return (
-        <Router>
+        <>
             <>
                 <nav className="navbar navbar-expand-lg bg-light">
                     <div className="container-fluid">
@@ -29,7 +31,7 @@ export const Navbar = () => {
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li><a className="dropdown-item" href="/realizarVentas">Realizar Venta</a></li>
-                                        <li><a className="dropdown-item" href="#">Historial de Ventas</a></li>
+                                        <li><a className="dropdown-item" href="/historialVentas">Historial de Ventas</a></li>
                                     </ul>
                                 </li>
 
@@ -57,40 +59,10 @@ export const Navbar = () => {
                 </nav>
             </>
 
-            <Routes>
-
-                <Route path="/ventas" element={
-                    <h1>Ventas</h1>
-                } />
-
-                <Route path="/realizarVentas" element={
-                    <NuevaVenta/>
-                } />
-
-                <Route path="/pokes" element={
-                    <h1>asas</h1>
-                } />
-
-                <Route path="/" exact element={
-                    <InicioApp />
-                } />
-
-                <Route path="/team_builder" exact element={
-                    <h1>aaa</h1>
-                } />
-
-                <Route path="/productos" exact element={
-
-                    <ListadoProductos />
-
-                } />
+            
 
 
 
-            </Routes>
-
-
-
-        </Router>
+     </>
     )
 }

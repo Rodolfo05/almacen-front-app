@@ -1,5 +1,9 @@
 import React from 'react'
 import { ModuloCaja } from './inicio/ModuloCaja'
+import { Route, Routes } from 'react-router-dom'
+import { HistorialVentas } from './ventas/historial_ventas/HistorialVentas'
+import { NuevaVenta } from './ventas/NuevaVenta'
+import { ListadoProductos } from './productos/ListadoProductos'
 
 export const InicioApp = () => {
   return (
@@ -41,6 +45,8 @@ export const InicioApp = () => {
         </div>
 
       </div>
+
+
     </div>
 
   )
